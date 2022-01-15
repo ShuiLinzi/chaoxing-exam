@@ -19,8 +19,6 @@ public class SwaggerConfig {
                 .apiInfo(webApiInfo())
                 .select()
                 .build();
-
-
     }
     private ApiInfo webApiInfo(){
         return new ApiInfoBuilder()

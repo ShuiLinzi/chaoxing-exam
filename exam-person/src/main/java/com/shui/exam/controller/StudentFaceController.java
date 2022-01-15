@@ -1,4 +1,4 @@
-package com.shui.exam.controller.student;
+package com.shui.exam.controller;
 
 import com.shui.exam.entity.UmsStudentFace;
 import com.shui.exam.service.StudentFaceService;
@@ -22,5 +22,9 @@ public class StudentFaceController {
     public List<UmsStudentFace> listAll(){
         List<UmsStudentFace> list = studentFaceService.list();
         return list;
+    }
+    @GetMapping("test")
+    public String test(){
+        return "123";
     }
 }

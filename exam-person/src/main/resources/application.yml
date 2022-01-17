@@ -37,6 +37,8 @@ aliyun:
     accessKeyId: LTAI5tEa1JzBX3JRHEN86LdH
     accessKeySecret: lCfZce5vOfOoDRka3TFkXXIZMM9VJr
     bucketName: chaoxing-exam
-
+faceplus:
+  key: i1gKPLbt6PU7NQ3qtGQFsPxn_ucFtHu4
+  secret: Ppb5qSzkxKbrenAybRJP1csVdn8tEGZB
 server:
   port: 8110

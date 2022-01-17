@@ -23,12 +23,6 @@ public class StudentFaceController {
     @Autowired
     private OssServiceImpl ossService;
 
-    @ApiOperation("测试接口")
-
-    @GetMapping("test")
-    public String test() {
-        return "123";
-    }
 
     @ApiOperation("人脸信息完善")
     @PostMapping("update")
@@ -42,5 +36,10 @@ public class StudentFaceController {
         if (save)
             return ResultData.success();
         else return ResultData.error();
+    }
+    @ApiOperation("人脸对比接口")
+    @PostMapping("check")
+    public ResultData CheckFace(@ApiParam("用户的id") @RequestParam("id") long id,@ApiParam(value = "文件") MultipartFile multipartFile){
+        String url = "https://api-cn.faceplusplus.com/facepp/v3/compare";
     }
 }

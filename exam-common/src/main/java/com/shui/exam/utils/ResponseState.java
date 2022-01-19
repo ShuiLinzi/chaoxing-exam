@@ -3,6 +3,8 @@ package com.shui.exam.utils;
 public enum ResponseState {
     SUCCESS("操作成功", 200),
     FILEUPDATEERROR("文件上传失败",501),
+    FACEERROR("人脸上传失败，请重试",502),
+    FACECHECKERROR("两次人脸不符合，请重新尝试",503),
     ERROR("操作失败", 500);
 
     private String message;

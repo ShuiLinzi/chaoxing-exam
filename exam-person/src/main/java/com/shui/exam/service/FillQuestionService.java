@@ -1,7 +1,10 @@
 package com.shui.exam.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.shui.exam.entity.FillQuestion;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface FillQuestionService extends IService<FillQuestion> {
 
+    Page<FillQuestion>  getBySubject(String subject, Page<FillQuestion> fillQuestionPage);
 }

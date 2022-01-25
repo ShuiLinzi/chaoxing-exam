@@ -1,5 +1,7 @@
 package com.shui.exam.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.shui.exam.entity.FillQuestion;
 import com.shui.exam.entity.JudgeQuestion;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +15,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface JudgeQuestionService extends IService<JudgeQuestion> {
 
+
+    Page<JudgeQuestion> getBySubject(String subject, Page<JudgeQuestion> judgeQuestionPage);
 }

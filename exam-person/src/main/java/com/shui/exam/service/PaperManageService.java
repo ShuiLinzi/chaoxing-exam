@@ -20,4 +20,6 @@ public interface PaperManageService extends IService<PaperManage> {
     boolean deleteQuestion(Integer paperId, Integer questionId);
 
     boolean deletePaper(Integer paperId);
+
+
 }

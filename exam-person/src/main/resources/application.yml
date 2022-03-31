@@ -1,8 +1,8 @@
 spring:
   application:
     name: exam-person
-  profiles:
-    active: dev #默认为开发环境
+#  profiles:
+#    active: dev #默认为开发环境
   servlet:
     multipart:
       enabled: true #开启文件上传
@@ -13,6 +13,10 @@ spring:
     username: root
     password: chenguoqing
 
+  profiles:
+    active: db
+  messages:
+    encoding: UTF-8
 mybatis-plus:
   mapper-locations: classpath:com/shui/exam/mapper/xml/*.xml
 #

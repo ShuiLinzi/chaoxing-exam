@@ -69,11 +69,13 @@ public class PaperManageController {
                 return ResultData.error().code(ResponseState.PAPERIDERROR.getValue()).message(ResponseState.PAPERIDERROR.getMessage());
             }
             paperManageService.save(list);
-
-            System.out.println(paperId);
-
         }
+        //创建试卷，然后添加到数据库
+//        PaperManage paperManage = paperManageList.get(0);
+//        //不能有重复值,自定义去重函数
+//        paperPostManageService.iSave(new PaperPostManage().setPaperId(paperManage.getPaperId()));
         return ResultData.success();
+
     }
 
     @ApiOperation("删除指定试卷的具体题目")
@@ -183,5 +185,8 @@ public class PaperManageController {
         }
         return ResultData.success().data("item", list);
     }
+
+
+
 }
 

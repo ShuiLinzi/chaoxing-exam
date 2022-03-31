@@ -7,7 +7,9 @@ public enum ResponseState {
     FACECHECKERROR("两次人脸不符合，请重新尝试",503),
     PAPERIDERROR("试卷id为空",504),
     DELETEDERROR("删除失败",505),
-    ERROR("操作失败", 500);
+    ERROR("操作失败", 500),
+    TRUE("是",1),
+    FALSE("否",0);
 
     private String message;
     private int value;

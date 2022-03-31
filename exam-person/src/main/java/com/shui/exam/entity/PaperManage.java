@@ -40,5 +40,9 @@ public class PaperManage implements Serializable {
     @TableField("questionId")
     private Integer questionId;
 
+//    @ApiModelProperty(value = "题目编号")
+//    @TableField("isPost")
+//    private Integer isPost;
+
 
 }

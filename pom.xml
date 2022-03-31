@@ -7,6 +7,8 @@
 
         <module>exam-common</module>
         <module>exam-person</module>
+        <module>exam-portal</module>
+        <module>exam-all</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

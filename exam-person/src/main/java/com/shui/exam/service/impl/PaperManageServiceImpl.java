@@ -46,4 +46,6 @@ public class PaperManageServiceImpl extends ServiceImpl<PaperManageMapper, Paper
         if (delete != 0) return true;
         else return false;
     }
+
+
 }

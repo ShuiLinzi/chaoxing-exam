@@ -15,10 +15,10 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     private RedisServiceImpl redisService;
 
     //设置的前缀路径
-    @Value("${redis.key.prefix.authCode}")
+    @Value("${spring.redis.key.prefix.authCode}")
     private String REDIS_KEY_PREFIX_AUTH_CODE;
 
-    @Value("${redis.key.expire.authCode}")
+    @Value("${spring.redis.key.expire.authCode}")
     private Long AUTH_CODE_EXPIRE_SECONDS;
 
     @Override
